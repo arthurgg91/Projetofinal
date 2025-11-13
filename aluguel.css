@@ -1,0 +1,218 @@
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #023c1a;
+}
+
+/* Cor verde padronizada para todas as páginas */
+.page-background {
+  background-color: rgba(1, 103, 48, 0.7);
+}
+
+.header {
+  background: linear-gradient(90deg, #014d1e, #00a651);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  color: #fff;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .logo img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.nav-icons i {
+  margin-left: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-icons i:hover {
+  color: #ffc300;
+  transform: scale(1.2);
+}
+
+.banner {
+  position: relative;
+  height: 300px;
+  background-image: url('reizinho.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(1, 103, 48, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(1, 103, 48, 0.55),
+    rgba(1, 150, 60, 0.50)
+  );
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+.banner-content h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.btn-reservar {
+  margin-top: 15px;
+  background: linear-gradient(45deg, #ffc300, #ffb700);
+  color: #014d1e;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-reservar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffc300;
+}
+
+.horarios {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.horarios h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.dias {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.dia {
+  border: 1px solid #00a651;
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dia.ativo {
+  background: #00a651;
+  color: #fff;
+}
+
+.grade-horarios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  padding: 0 40px;
+}
+
+.horario {
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.horario.livre {
+  background: #00a651;
+  color: #fff;
+}
+
+.horario.ocupado {
+  background: #c91e1e;
+  color: #fff;
+}
+
+.horario:hover {
+  transform: scale(1.05);
+}
+
+.unidades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 40px 20px;
+}
+
+.mapa img {
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.avaliacao {
+  max-width: 350px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.footer {
+  background: linear-gradient(90deg, #013515, #00a651);
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+.footer .social-icons i {
+  margin: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer .social-icons i:hover {
+  color: #ffc300;
+  transform: scale(1.2);
+}
